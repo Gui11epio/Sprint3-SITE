@@ -1,33 +1,25 @@
-import { CabecHeader } from "../style";
 
-
-export default function Cabecalho(){
-
-    return(
+import { CabecHeader, ContainerCabecalho, TituloCabecalho, BotoesCabecalho, BotaoCliente, LinhaEstilizada, LinkEstilizado, BotaoEstilizado } from "../style";
+export default function Cabecalho() {
+    return (
         <CabecHeader>
-            
-            
-            {/* <div className="cabecario">
-            </div> */}
-            <h1 id="cabecario">HELPY SEGUROS</h1>
-
-            <li className="botao">
-                <button>
-                    <a href="#">Página Principal</a>
-                </button>
-                
-                <button>
-                    <a href="#">HELPY</a>
-                </button>
-                
-                <button>
-                    <a href="#">Área do cliente</a>
-                </button>
-            </li >
-            <hr />
-               
+            <ContainerCabecalho>
+                <TituloCabecalho id="cabecario">HELPY SEGUROS</TituloCabecalho>
+                <BotoesCabecalho className="botao">
+                    <BotaoEstilizado>
+                        <LinkEstilizado href="#">Página Principal</LinkEstilizado>
+                    </BotaoEstilizado>
+                    <BotaoEstilizado>
+                        <LinkEstilizado href="#">HELPY</LinkEstilizado>
+                    </BotaoEstilizado>
+                </BotoesCabecalho>
+                <BotaoCliente>
+                    <BotaoEstilizado>
+                        <LinkEstilizado href="#">Área do cliente</LinkEstilizado>
+                    </BotaoEstilizado>
+                </BotaoCliente>
+            </ContainerCabecalho>
+            <LinhaEstilizada />
         </CabecHeader>
-
-
-    )
+    );
 }
