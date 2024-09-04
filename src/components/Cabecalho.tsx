@@ -7,10 +7,13 @@ export default function Cabecalho() {
                 <TituloCabecalho id="cabecario">HELPY SEGUROS</TituloCabecalho>
                 <BotoesCabecalho className="botao">
                     <BotaoEstilizado>
-                        <LinkEstilizado href="#">Página Principal</LinkEstilizado>
+                        <LinkEstilizado href="/">Página Principal</LinkEstilizado>
                     </BotaoEstilizado>
                     <BotaoEstilizado>
-                        <LinkEstilizado href="#">HELPY</LinkEstilizado>
+                        <LinkEstilizado href="/helpy">HELPY</LinkEstilizado>
+                    </BotaoEstilizado>
+                    <BotaoEstilizado>
+                        <LinkEstilizado href="/membros">Página dos Membros</LinkEstilizado>
                     </BotaoEstilizado>
                 </BotoesCabecalho>
                 <BotaoCliente>
