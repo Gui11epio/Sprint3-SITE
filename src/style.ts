@@ -58,13 +58,13 @@ export const BotaoEstilizado = styled.button`
 `;
 
 export const CorpoPrincipal = styled.main`
-    background-color: #00008B; /* Azul escuro */
+    background-color: #42BCEC; /* Azul escuro */
     height: 100vh; /* Ajuste conforme necessário */
     width: 100%; /* Ajuste conforme necessário */
     flex-grow: 1;
 
     h1{
-        color: white;
+        color: black;
         font-family: 'Times New Roman', Times, serif;
         justify-content: center;
         text-align: center;
@@ -162,4 +162,17 @@ legend{
     width: 300px; /* Ajuste para o tamanho desejado */
     height: 350px;
 }
+`
+
+export const ImagemCabec = styled.img`
+
+    width:50px;
+    height: 50px;
+
+`
+
+export const FormCadastro = styled.form`
+
+    
+
 `

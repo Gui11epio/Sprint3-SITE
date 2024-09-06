@@ -6,28 +6,33 @@ import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Inicio from './routes/PaginaPrincipal/index.tsx'
+import PaginaCadastro from './routes/PaginaCadastro/index.tsx'
 import InicioHelpy from './routes/PaginaHELPY/index.tsx'
 import PaginaMembros from './routes/PaginaMembros/index.tsx'
+import Inicio from './routes/PaginaPrincipal/index.tsx'
 
 
 const router = createBrowserRouter([
 
   {
-    path:'/',
-    element: <App/>,
+    path: '/',
+    element: <App />,
     children: [
       {
-        path:'/',
-        element: <Inicio/>
+        path: '/',
+        element: <Inicio />
       },
       {
-        path:'/helpy',
-        element: <InicioHelpy/>
+        path: '/helpy',
+        element: <InicioHelpy />
       },
       {
-        path:'/membros',
-        element:<PaginaMembros/>
+        path: '/membros',
+        element: <PaginaMembros />
+      },
+      {
+        path: '/cadastro',
+        element: <PaginaCadastro />
       }
     ]
   }
@@ -35,7 +40,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router}/>
-    <GlobalStyle/>
+    <RouterProvider router={router} />
+    <GlobalStyle />
   </StrictMode>,
 )

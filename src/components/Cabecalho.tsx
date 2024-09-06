@@ -1,5 +1,5 @@
-
-import { CabecHeader, ContainerCabecalho, TituloCabecalho, BotoesCabecalho, BotaoCliente, LinhaEstilizada, LinkEstilizado, BotaoEstilizado } from "../style";
+import icone from '../assets/icone.jpg';
+import { BotaoCliente, BotaoEstilizado, BotoesCabecalho, CabecHeader, ContainerCabecalho, ImagemCabec, LinhaEstilizada, LinkEstilizado, TituloCabecalho } from "../style";
 export default function Cabecalho() {
     return (
         <CabecHeader>
@@ -17,9 +17,9 @@ export default function Cabecalho() {
                     </BotaoEstilizado>
                 </BotoesCabecalho>
                 <BotaoCliente>
-                    <BotaoEstilizado>
-                        <LinkEstilizado href="#">Área do cliente</LinkEstilizado>
-                    </BotaoEstilizado>
+                    <LinkEstilizado href="/cadastro">
+                        <ImagemCabec src={icone} id='icone' />
+                    </LinkEstilizado>
                 </BotaoCliente>
             </ContainerCabecalho>
             <LinhaEstilizada />
