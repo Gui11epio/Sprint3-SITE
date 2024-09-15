@@ -1,6 +1,6 @@
 Para conseguir iniciar o programa, escreva no terminal: 
 ```
-npm install style-components react-router-dom
+npm install styled-components react-router-dom
 ```
 Para poder entrar no site:
 ```
