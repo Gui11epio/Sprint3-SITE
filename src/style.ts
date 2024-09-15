@@ -273,3 +273,15 @@ export const SecHelpy = styled.section`
     }
 
 `
+
+export const DivErro = styled.div`
+
+    border: 2px solid #42BCEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 50px;
+`
