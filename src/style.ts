@@ -23,6 +23,11 @@ export const TituloCabecalho = styled.h1`
     margin-right: 20px; 
 `;
 
+export const ImgCabecalho = styled.img`
+    width: 100px;
+    height: 100px;
+`
+
 export const BotoesCabecalho = styled.li`
     display: flex;
     gap: 10px;
@@ -57,11 +62,13 @@ export const BotaoEstilizado = styled.button`
     transition: background-color 0.3s;
 `;
 
-export const CorpoPrincipal = styled.main`
-    background-color: #42BCEC; /* Azul escuro */
-    height: 100vh; /* Ajuste conforme necessário */
-    width: 100%; /* Ajuste conforme necessário */
+export const CorpoPrincipal = styled.div`
+    background-color: #42BCEC; 
+    height: 100vh; 
+    width: 100%; 
     flex-grow: 1;
+
+    
 
     h1{
         color: black;
@@ -82,9 +89,10 @@ export const SectionPrincipal = styled.section`
     flex-direction: column;
     justify-content: left;
     text-align: left;
+    background-color: white;
 
     h2{
-        color: white;
+        color: black;
         text-align: left;
         justify-content: left;
         margin: 10px;
@@ -92,7 +100,7 @@ export const SectionPrincipal = styled.section`
     }
 
     p{
-        color: white;
+        color: black;
         text-align: left;
         justify-content: left;
         margin: 10px;
@@ -121,7 +129,6 @@ export const Rodape = styled.footer`
 export const BodyMembros = styled.body`
 
 div{
-    background-color: #00008B;
     height: 171;
     width: 1440;
 }
@@ -142,7 +149,7 @@ h2{
 }
 
 p{
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -154,18 +161,28 @@ legend{
     text-align: center;
 }
 #participante h2, .participante p {
-    color: #FFFFFF; /* Altere para a cor que você deseja */
+    color: #FFFFFF; 
+
     
 }
 
 #participante img {
-    width: 300px; /* Ajuste para o tamanho desejado */
+    width: 300px; 
     height: 350px;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+    min-height: 350px;
+    border: 2px solid blue;
+    background-color: white;
+
+    padding: 10px;
 }
 `
 
-export const ImagemCabec = styled.img`
 
+
+export const ImagemCabec = styled.img`
     width:50px;
     height: 50px;
 
@@ -173,6 +190,86 @@ export const ImagemCabec = styled.img`
 
 export const FormCadastro = styled.form`
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+
+
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .field, .field2 {
+        width: 45%;
+        min-height: 350px;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+
+    .label {
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .input {
+        border-radius: 15px;
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr {
+        color: white;
+    }
+
+    h2 {
+        padding: 30px;
+    }
+
+    .botoes{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .botao {
+        text-decoration: none;
+        color: #000;
+        background-color: #f0f0f0;
+        border: 3px solid #42BCEC;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+`;
     
+
+export const SecHelpy = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+
+    p{
+        font-size: 18px;
+        color: black;
+        max-width: 50%;
+    }
+
+    div{
+        max-width: 400px;
+        height: auto;
+    }
 
 `

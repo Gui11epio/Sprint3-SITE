@@ -1,10 +1,11 @@
 import icone from '../assets/icone.jpg';
-import { BotaoCliente, BotaoEstilizado, BotoesCabecalho, CabecHeader, ContainerCabecalho, ImagemCabec, LinhaEstilizada, LinkEstilizado, TituloCabecalho } from "../style";
+import helpy from '../assets/HELPY.png'
+import { BotaoCliente, BotaoEstilizado, BotoesCabecalho, CabecHeader, ContainerCabecalho, ImagemCabec, ImgCabecalho, LinhaEstilizada, LinkEstilizado } from "../style";
 export default function Cabecalho() {
     return (
         <CabecHeader>
             <ContainerCabecalho>
-                <TituloCabecalho id="cabecario">HELPY SEGUROS</TituloCabecalho>
+                <ImgCabecalho src={helpy} alt="" />
                 <BotoesCabecalho className="botao">
                     <BotaoEstilizado>
                         <LinkEstilizado href="/">Página Principal</LinkEstilizado>

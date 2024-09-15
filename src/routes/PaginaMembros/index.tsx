@@ -1,5 +1,5 @@
 import { BodyMembros, CorpoPrincipal } from "../../style";
-import gui from '../../assets/guilherme.jpg'
+import gui from '../../assets/guilherme.jpeg'
 import fe from '../../assets/feernando.jpg'
 import mateus from '../../assets/Mateus.jpg'
 
