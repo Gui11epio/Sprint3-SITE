@@ -78,6 +78,7 @@ export const CorpoPrincipal = styled.div`
         padding: 20px;
 
     }
+    
 
 `
 
@@ -118,6 +119,7 @@ export const Rodape = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     p{
         color: #00008B;
@@ -127,23 +129,18 @@ export const Rodape = styled.footer`
 `
 
 export const BodyMembros = styled.body`
+    height: 100%; 
+    width: 100%;
+    background-color : #42BCEC;
+    flex-grow: 1;
+    position: relative;
 
 div{
     height: 171;
     width: 1440;
 }
 
-.sec{
-    grid-area: 'sec';
-    background-color: white;
-}   
-
-h1{
-    color: #42bcec;
-    
-    font-style: italic;
-}
-
+  
 h2{
     text-align: center;
 }
@@ -152,23 +149,15 @@ p{
     text-align: center;
 }
 
-
-input{
-    align-self:center ;
-}
-
-legend{
-    text-align: center;
-}
-#participante h2, .participante p {
+.participante h2, .participante p {
     color: #FFFFFF; 
 
     
 }
 
-#participante img {
-    width: 300px; 
-    height: 350px;
+.participante img {
+    width: 250px; 
+    height: 100px;
     justify-content: center;
     align-items: center;
     /* width: 50%; */
@@ -178,6 +167,62 @@ legend{
 
     padding: 10px;
 }
+
+/* desktop*/
+@media (min-width: 1200px) {
+    .participante{
+
+        height: 100%; 
+        width: 100%;
+        position: relative;
+        background-color: #42BCEC;
+    }
+
+    .participante img{
+        width: 300px;
+        height: 100px;
+        max-height: calc(100vh - 5vh);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .participante{
+        
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - 150px);
+        margin: 10px;
+        background-color: #42BCEC;
+    }
+    
+
+    .participante img {
+        width: 300px;
+        height: 100px;
+        max-height: calc(100vh - 5vh);
+    }
+}
+
+@media (max-width: 767px) {
+    .participante{
+
+        position: relative;
+        background-color: #42BCEC;
+        
+        width: 200px; 
+        height: auto;
+        margin: 20px;
+    }
+
+    .participante img{
+        width: 150px;
+        height: 100px;
+        max-height: calc(100vh - 5vh);
+    }
+}
+
 `
 
 
@@ -197,6 +242,8 @@ export const FormCadastro = styled.form`
     background-color: white;
     padding: 20px;
     margin: 0 auto;
+    max-height: 100vh;
+    overflow-y: auto;
 
 
     .conteiner{
@@ -252,6 +299,68 @@ export const FormCadastro = styled.form`
         border-radius: 5px;
         transition: background-color 0.3s;
     }
+
+    /* Estilos para telas maiores (Desktop) */
+    @media (min-width: 1024px) {
+        width: 50%;
+        max-height: 85vh;
+        overflow-y: auto;
+
+        .conteiner {
+            flex-direction: row;
+        }
+
+        .field, .field2 {
+            width: 48%;
+        }
+    }
+
+    /* Estilos para tablets */
+    @media (max-width: 1023px) and (min-width: 768px) {
+        width: 70%;
+        max-height: 90vh;
+
+        .conteiner {
+            flex-direction: column;
+        }
+
+        .field, .field2 {
+            width: 100%;
+        }
+    }
+
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 767px) {
+        width: 90%;
+        max-height: 95vh;
+        overflow-y: auto;
+
+        .conteiner {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .field, .field2 {
+            width: 100%;
+        }
+
+        .label {
+            font-size: 18px;
+        }
+
+        .input {
+            padding: 8px 20px;
+        }
+
+        .botoes {
+            flex-direction: column;
+        }
+
+        .botao {
+            width: 100%;
+            padding: 12px;
+        }
+    }
 `;
     
 
@@ -260,6 +369,8 @@ export const SecHelpy = styled.section`
     align-items: center;
     justify-content: space-between; 
     padding: 20px;
+    background-color: white;
+    margin: 0 auto;
 
     p{
         font-size: 18px;
@@ -270,6 +381,10 @@ export const SecHelpy = styled.section`
     div{
         max-width: 400px;
         height: auto;
+    }
+
+    .titulo{
+        background-color: white;
     }
 
 `
@@ -285,3 +400,7 @@ export const DivErro = styled.div`
     margin: 0 auto;
     gap: 50px;
 `
+
+
+
+
